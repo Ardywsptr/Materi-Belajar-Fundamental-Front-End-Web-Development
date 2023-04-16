@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Styling without Shadow DOM</title>
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <image-figure
+      src="/assets/logo-dicoding.jpeg"
+      alt="Dicoding Logo"
+      caption="styling pada shadow DOM"
+    >
+    </image-figure>
+
+    <!-- Styling di dalam image-figure akan mempengaruhi juga elemen di luarnya -->
+    <figure>
+      <img src="/assets/logo-dicoding.jpeg" alt="Dicoding logo" />
+      <figcaption>styling pada DOM</figcaption>
+    </figure>
+    <script src="./js/image-figure.js"></script>
+  </body>
+</html>
